@@ -1,34 +1,71 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
 
+# Created by https://www.gitignore.io/api/ionic3,sublimetext
+
+### Ionic3 ###
+# Log an tmp data
 *~
 *.sw[mnpcod]
 *.log
 *.tmp
 *.tmp.*
 log.txt
-*.sublime-project
-*.sublime-workspace
-.vscode/
-npm-debug.log*
 
-.idea/
-.ionic/
-.sourcemaps/
-.sass-cache/
-.tmp/
-.versions/
-coverage/
-www/
+# NPM (Node Package Manager) files
+npm-debug.log*
 node_modules/
 tmp/
 temp/
+
+# Preprocessors cache files
+.sourcemaps/
+.sass-cache/
+.tmp/
+hooks/
+
+# Ionic 3 plugins files
 platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
-$RECYCLE.BIN/
+www/
 
+# Trash data
+$RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+### SublimeText ###
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+# *.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+
+# End of https://www.gitignore.io/api/ionic3,sublimetext
