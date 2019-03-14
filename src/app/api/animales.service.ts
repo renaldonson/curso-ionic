@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-// import { HTTP } from '@ionic-native/http/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 import { HttpClient } from '@angular/common/http'
+// import { HTTP } from '@angular/core';
+import 'rxjs/Rx';
 
 
 @Injectable({
@@ -8,12 +10,17 @@ import { HttpClient } from '@angular/common/http'
 })
 export class AnimalesService {
 
-  constructor(private http: HttpClient) {
+  constructor(private httpclient: HttpClient, private http: HTTP) {
 
   }
 
 
   getAnimals(){
-  	return this.http.get("http://demo0253989.mockable.io/curso-ionic-list");
+    return this.httpclient.get("http://demo0253989.mockable.io/curso-ionic-list");
+
   }
+
+  // getAnimals2(){
+  // 	return this.http.get("http://demo0253989.mockable.io/curso-ionic-list").map(res => res.json());
+  // }
 }

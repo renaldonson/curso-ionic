@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AnimalesService } from '../api/animales.service'
+import { AnimalesService } from '../api/animales.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -10,14 +11,15 @@ export class Tab1Page {
 
 
 
-	constructor(private animales: AnimalesService ){
+	constructor(private animales: AnimalesService, 
+				private navCtrl: NavController ){
 
 	}
 
-	ngOnInit(){
-		this.animales.getAnimals().subscribe(data=>{
-			console.log(data);
-		});
+	medicos(){
+		this.navCtrl.navigateForward('/medicos');
 	}
+
+
 
 }

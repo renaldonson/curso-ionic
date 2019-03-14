@@ -18,5 +18,7 @@ export class Tab2Page {
 			console.log(data);
 			this.animales = data.animales;
 		});
+
+
 	}
 }
