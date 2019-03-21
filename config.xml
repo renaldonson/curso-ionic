@@ -87,4 +87,5 @@
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyC_QGiBvsA6chPp8KSCnNCgl2XQX0UYXGo" />
     </plugin>
     <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-sqlite-storage" spec="^3.2.0" />
 </widget>

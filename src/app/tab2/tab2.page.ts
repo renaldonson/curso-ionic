@@ -16,7 +16,7 @@ export class Tab2Page {
 	ngOnInit(){
 		this.animales_service.getAnimals().subscribe(data=>{
 			console.log(data);
-			this.animales = data.animales;
+			this.animales = data;
 		});
 
 

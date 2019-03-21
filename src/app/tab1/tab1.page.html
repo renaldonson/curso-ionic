@@ -22,9 +22,18 @@
       <ion-list-header>
         <ion-label>Sección Medicos</ion-label>
       </ion-list-header>
-      <ion-item (click)="medicos()">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Médicos</ion-label>
+
+      <ion-item *ngFor="let med of list_medicos" (click)="medicos(med.id)">
+        <ion-thumbnail slot="start">
+          <img src="{{ med.img }}">
+        </ion-thumbnail>
+        <ion-label>{{ med.nombre }}</ion-label>
       </ion-item>
+
+<!--       <ion-item *ngFor="let med of list_medicos" (click)="medicos(med.id)">
+        <ion-icon slot="start" color="medium" name="person"></ion-icon>
+        <ion-label>{{ med.nombre }}</ion-label>
+      </ion-item> -->
+
     </ion-list>
 </ion-content>

@@ -1,12 +1,14 @@
 <ion-header>
   <ion-toolbar>
   	<ion-buttons slot="start">
-      <ion-back-button  defaultHref="./tab1"></ion-back-button>
+      <ion-back-button  defaultHref="/tab1"></ion-back-button>
     </ion-buttons>
     <ion-title>Medicos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-	<h1>Renan</h1>
+	<div #Map class="map"></div>
+	<h1>{{ medico.nombre }}</h1>
+	<p>Lorem ipsum</p>
 </ion-content>
